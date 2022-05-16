@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  background-color: black;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191c25;
+  padding: 8px 12px;
+}
+
+.navbar__logo{
+  font-size: 2em;
+  color: white;
+}
+
+.navbar__logo i{
+  color: #778899;
+}
+
+.navbar__icons{
+  list-style: none;
+  color:white;
+  display:flex;
+  font-size: 18px;
+}
+
+.navbar__icons li{
+  padding: 8px 12px;
+}
+
+.sidebar {
+  height: 2000px;
+  width: 200px;
+  background-color: #191c25;
+}
