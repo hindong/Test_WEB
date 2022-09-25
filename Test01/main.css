@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0,0,0,1);
+    font-family: 'Noto Serif', serif;
+}
+
+#main-head{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ms Madi', cursive;
+}
+.main-title{
+    font-size: 2.5rem;
+    color:aqua;
+}
+
+#nav{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /* background: lightgray; */
+}
+
+#nav ul{
+    list-style: none;
+    position: static;
+}
+
+#nav ul li{
+    float:left;
+    margin-right: 30px;
+}
+
+#nav ul li a{
+    font-size: 2em;
+    text-decoration: none;
+    color:black;
+    line-height: 1em;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+#nav li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color:  var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 4px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+#nav li a:hover::before{
+    width: auto;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
